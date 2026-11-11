@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build artifacts
+build/
+bin/
+obj/
+dist/
+**/build/
+**/dist/
+*.exe
+*.o
+*.a
+
+# Database files
+database/*.db
+database/*.db-journal
+*.db
+*.db-shm
+*.db-wal
+
+# Environment & logs
+.env
+.env.local
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -6,7 +6,11 @@
 int main(int argc, char** argv) {
     const std::string dbPath = argc > 1 ? argv[1] : "../database/aegis.db";
     const std::string dbDir  = argc > 2 ? argv[2] : "../database";
-    const int port           = argc > 3 ? std::atoi(argv[3]) : 8080;
+    int defaultPort = 8080;
+    if (const char* envPort = std::getenv("PORT")) {
+        defaultPort = std::atoi(envPort);
+    }
+    const int port           = argc > 3 ? std::atoi(argv[3]) : defaultPort;
 
     try {
         aegis::Database db(dbPath);

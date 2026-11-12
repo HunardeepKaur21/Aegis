@@ -6,7 +6,6 @@ const links = [
   { to: '/requests', label: 'Rescue Requests', icon: 'M12 3 2 20h20zM12 10v5M12 17.5v.5' },
   { to: '/resources', label: 'Resource Optimizer', icon: 'M21 8 12 3 3 8v8l9 5 9-5zM3 8l9 5 9-5M12 13v8' },
   { to: '/shelters', label: 'Shelters & Victims', icon: 'M3 11 12 3l9 8M5 10v10h14V10M10 20v-6h4v6' },
-  { to: '/lab', label: 'Algorithm Laboratory', icon: 'M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3' },
 ];
 
 export default function Sidebar() {

@@ -5,8 +5,8 @@ echo ========================================================
 echo         AEGIS: Advanced Emergency Intelligence
 echo ========================================================
 echo.
-echo [1/3] Starting C++ Backend Server (Port 8080)...
-start "AEGIS Backend Server (C++)" cmd /k "cd /d "%~dp0backend" && build\bin\aegis_server.exe ..\database\aegis.db ..\database 8080"
+echo [1/3] Starting Backend Server (Port 8080)...
+start "AEGIS Backend Server" cmd /k "cd /d "%~dp0" && start_backend.bat"
 
 echo [2/3] Waiting for Backend initialization...
 timeout /t 2 /nobreak >nul
